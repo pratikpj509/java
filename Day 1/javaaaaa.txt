@@ -1,0 +1,76 @@
+Sure! Let's break down these terms in easy language with Java in mind.
+
+1. JDK (Java Development Kit)
+
+It's a toolkit for Java programmers.
+
+Contains everything you need to write, compile, and run Java programs.
+
+Includes:
+
+Compiler (javac)
+
+JRE (Java Runtime Environment)
+
+Tools like debugger, JavaDoc, etc.
+
+Example: When you write Java code and want to create a .class file, you use the JDK.
+
+2. JVM (Java Virtual Machine)
+
+It's like a machine inside your computer that runs Java programs.
+
+Converts Java bytecode (compiled .class files) into machine code your computer understands.
+
+JVM is platform-dependent, but bytecode is platform-independent.
+
+Example: You compile Java code into bytecode once, then JVM runs that bytecode on any machine (Windows, Mac, Linux).
+
+3. JRE (Java Runtime Environment)
+
+It provides the environment to run Java programs.
+
+Includes JVM + libraries needed to run Java applications.
+
+Does not include tools to write or compile Java code (so no compiler).
+
+Example: If you just want to run Java programs, you install JRE.
+
+4. JIT (Just-In-Time Compiler)
+
+It's a part of the JVM.
+
+When JVM runs Java bytecode, JIT compiles parts of bytecode into machine code at runtime to speed up execution.
+
+Makes the program run faster after the first few runs.
+
+Summary:
+Term	What it is	Purpose	Includes/Does
+JDK	Full development kit	Write, compile, debug Java code	Compiler + JRE + tools
+JVM	Virtual machine	Run compiled Java bytecode	Runs bytecode, platform-dependent
+JRE	Runtime environment	Run Java applications	JVM + libraries (no compiler)
+JIT	Compiler inside JVM	Speed up bytecode execution	Compiles bytecode to machine code during run
+Difference Between Compiler and Interpreter
+Aspect	Compiler	Interpreter
+Converts code to	Machine code (all at once)	Executes code line-by-line
+When conversion	Before running the program	During running the program
+Speed of execution	Faster (compiled code runs faster)	Slower (interpreted line-by-line)
+Errors found	At compile-time	At runtime
+Example in Java	javac compiles .java to .class	JVM interprets bytecode at runtime
+Example:
+
+Compiler:
+
+// Compile this using javac
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+
+
+javac Hello.java compiles the file into Hello.class (bytecode).
+
+Interpreter (JVM):
+
+java Hello runs the bytecode by interpreting it.

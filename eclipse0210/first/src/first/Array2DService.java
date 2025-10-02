@@ -206,5 +206,38 @@ public class Array2DService {
 		return maxi;
 	}
 
+	public static int[] maxRowsise(int[][] arr) {
+		int[] row= new int[arr.length];
+		
+		for(int i=0;i<arr.length;i++) {
+			int rowmax=arr[0][0];
+			for(int j=0;j<arr[i].length;j++) {
+				
+				if(arr[i][j]>rowmax) {
+					rowmax=arr[i][j];
+				}
+			}
+			row[i]=rowmax;
+		}
+		return row;
+	}
+
+	public static int[] maxcolwise(int[][] arr) {
+int[] row1= new int[arr.length];
+	
+		for(int i=0;i<arr.length;i++) {
+			int rowmax=arr[0][0];
+			for(int j=0;j<arr[i].length;j++) {
+				
+				if(arr[j][i]>rowmax) {
+					rowmax=arr[j][i];
+				}
+			}
+			row1[i]=rowmax;
+		}
+		return row1;
+		
+	}
+
 }
 

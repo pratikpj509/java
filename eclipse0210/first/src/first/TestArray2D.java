@@ -52,8 +52,16 @@ public class TestArray2D {
 			
 			break;
 		case 5:
+			int [] max=Array2DService.maxRowsise(arr);
+			for(int i=0;i<max.length;i++) {
+				System.out.println("maximum of all numbers:"+max[i]);
+			}
 			break;
 		case 6:
+			int [] maxcol=Array2DService.maxcolwise(arr);
+			for(int i=0;i<maxcol.length;i++) {
+				System.out.println("maximum of all numbers:"+maxcol[i]);
+			}
 			break;
 		case 7:
 			int[][] addition=Array2DService.add2Darrays(arr,arr1);
